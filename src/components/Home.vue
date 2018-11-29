@@ -1,17 +1,20 @@
 <template>
     <div class="home">
         <h3>Home</h3>
+        <FerryList />
     </div>
 </template>
 
 <script>
-import axios from "axios";
+
+import FerryList from "./FerryList"
 
 export default {
   name: "Home",
-  mounted() {
-    console.log("working");
-  }
+  components:{
+    FerryList
+  },
+
 };
 </script>
 
